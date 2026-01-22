@@ -239,7 +239,6 @@ const menuData = {
     note: 'Calculado: promedio bebidas (2.90€) + dulce (3.00€)',
     highlight: true
   }
-  combo: { name: 'Combo Café + Dulce', price: '5.90€', desc: 'Cualquier café + repostería' },
 };
 
 const coffeeProfiles = [
