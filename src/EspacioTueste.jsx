@@ -432,6 +432,7 @@ export default function EspacioTueste() {
     return { globalAvgDeviation: globalAvg, winner: globalAvg <= 1 };
   };
 
+  return (
     <div style={{ fontFamily: "'Noto Sans', sans-serif", color: colors.text }}>
       <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
       
