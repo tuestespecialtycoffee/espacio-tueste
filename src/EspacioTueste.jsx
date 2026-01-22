@@ -395,11 +395,6 @@ export default function EspacioTueste() {
     setTempScores({});
     setUserScores([]);
   };
-  const [gameStarted, setGameStarted] = useState(false);
-  const [currentCoffeeIndex, setCurrentCoffeeIndex] = useState(0);
-  const [userScores, setUserScores] = useState([]);
-  const [tempScores, setTempScores] = useState({});
-  const [gameFinished, setGameFinished] = useState(false);
 
   const attributes = ['aroma', 'sabor', 'acidez', 'finalizacion', 'cuerpo', 'balance', 'global', 'uniformidad', 'dulzor', 'limpieza'];
   const attrLabels = ['Aroma', 'Sabor', 'Acidez', 'Finalización', 'Cuerpo', 'Balance', 'Global', 'Uniformidad', 'Dulzor', 'Limpieza'];
@@ -437,15 +432,6 @@ export default function EspacioTueste() {
     return { globalAvgDeviation: globalAvg, winner: globalAvg <= 1 };
   };
 
-  const resetGame = () => {
-    setGameStarted(false);
-    setCurrentCoffeeIndex(0);
-    setUserScores([]);
-    setTempScores({});
-    setGameFinished(false);
-  };
-
-  return (
     <div style={{ fontFamily: "'Noto Sans', sans-serif", color: colors.text }}>
       <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600&family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
       
